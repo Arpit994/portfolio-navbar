@@ -1,0 +1,41 @@
+@media screen and (max-width:840px){
+    nav .left .menu ul li a{
+        padding: 0;
+    }
+}
+@media screen and (max-width:768px){
+    nav{
+        padding: 16px 24px;
+    }
+    nav .left .menu{
+        display: none;
+    }
+    nav.active .left .menu{
+        padding: 16px 24px;
+    }
+    nav.active .left .menu .dropdown_right li{
+        margin-bottom: 20px;
+    }
+    nav.active .left .menu .dropdown_left{
+        width: 60%;
+    }
+    nav .left .menu .dropdown_left form input{
+        max-width: 100%;
+    }
+    nav.active .left .menu .dropdown_right{
+        column-count: 1;
+        width: 40%;
+    }
+}
+@media screen and (max-width:576px){
+    nav.active .left .menu{
+        flex-direction: column;
+        gap: 20px;
+    }
+    nav.active .left .menu .dropdown_left{
+        width: 100%;
+    }
+    nav.active .left .menu .dropdown_right{
+        width: 100%;
+    }
+}
